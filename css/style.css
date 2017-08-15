@@ -5,27 +5,18 @@
 
 /*--------.container----*/
 
-.container {
-	width: 60%;
-	margin: 0 auto;
-} 
-
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .container__background {
+	max-width: 800px;
+	margin: 50px auto;	
 	position: relative;
 }
 
-.container__background--first {
-	position: absolute;
-}
 
-.container__background--second {
-	position: absolute;
-	z-index: -1;
-}
-
-.container__background--third {
-	position: absolute;
-}
 
 .container__content {
 	width: 686px;
@@ -56,15 +47,14 @@
 
 .slide-nav {
     padding-top: 55px;
-    margin: 0;
-    padding-left: 0;
+    padding-left: 140px;
     list-style: none;
-    font-size: 0;
-    text-align: center;
+    
+   
 }
 
 .slide-nav li {
-	display: inline-block;
+	float: left;
     font-size: 16px;
     margin: 3px;
 }
@@ -134,16 +124,15 @@
 	margin: 0;
     padding-left: 0;
     list-style: none;
-}
-
-li {
-	display: inline-block;
     
 }
+
+
 
 .stars--first  {
 	color: yellow;
 	font-size: 15px;
+	float: left;
 	
 }
 
@@ -151,12 +140,14 @@ li {
 .stars--second  {
 	color: yellow;
 	font-size: 15px;
+	float: left;
 	
 }
 
 .stars--third  {
 	color: yellow;
 	font-size: 15px;
+	float: left;
 	
 }
 
@@ -164,6 +155,13 @@ li {
 	color: gray;
 	font-size: 15px;
 	opacity: 0.59;
+	float: left;
+	
+}
+
+.stars--four:hover {
+	color: yellow;
+	opacity: 1;
 	
 }
 
@@ -171,49 +169,58 @@ li {
 	color: gray;
 	font-size: 15px;
 	opacity: 0.59;
+	float: left;
 	
+}
+.stars--five:hover {
+	color: yellow;
+	opacity: 1;
 }
 
 
 
-.content--selection {
-	padding: 0;
-	
-}
 
-.selection--first {
+
+
+
+.selection_size	{
+	float: left;
+	color: #e1e1e1;
+	font-family: 'Roboto', sans-serif;
 	cursor: pointer;
 	margin-right: -4px;
 	width: 69px;
 	height: 32px;
+	padding-left: 5px;
 	border: 1px solid #ffffff;
 	background-color: #111a28;
-	opacity: 0.26;
-	
-	
+	opacity: 0.26
 }
-.selection--second {
+
+.selection_qty {
+	float: left;
+	color: #e1e1e1;
+	font-family: 'Roboto', sans-serif;
 	cursor: pointer;
 	width: 69px;
 	height: 32px;
+	margin-left: 5px;
+	padding-left: 5px;
 	border: 1px solid #ffffff;
 	background-color: #111a28;
 	opacity: 0.26;
 }
 
-span {
+.selection_add {
+	clear: both;
 	color: #e1e1e1;
 	font-family: 'Roboto', sans-serif;
-}
-
-.selection--third {
 	cursor: pointer;
 	width: 184px;
 	height: 40px;
 	border: 1px solid #ffffff;
 	background-color: #4c525a;
 	opacity: 0.26;
+	margin-top: 35px;
 }
-
-	
 
