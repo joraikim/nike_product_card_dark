@@ -9,14 +9,13 @@
 		<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
 	</head>
 	<body>
-		<div class="container">
+		
 			
 			<!---container__background-->
 
 			<div class="container__background">
-				<img class="container__background--first" src="images/group-3-copy.png">
-				<img class="container__background--second" src="images/main-bg.png">
-				<img class="container__background--third" src="images/layer-6.png">
+				<img class="container__background--first" src="images/main-bg.png">
+				
 
 				<!---container__content-->
 
@@ -26,9 +25,9 @@
 					</div>
 					<!---container__content--image-->
 
-					<div class="container__content--image">
+					<div class="container__content--image clearfix">
 						<img src="images/nike-sb-stefan-janoski-max.png">
-						<ul class="slide-nav">
+						<ul class="slide-nav clearfix">
 							<li>
 								<button class="active"><span>slide1</span></button>
 							</li>
@@ -48,7 +47,7 @@
 					<div class="container__content--information">
 						<p class="container__content--title">Nike SB Stefan<br>  Janoski Max</p>
 						<p class="container__content--subtitle">Unisex Skateboarding Shoe</p>
-						<ul class="content--stars">
+						<ul class="content--stars clearfix">
 							<li>
 								<a class="stars--first" href="#">
 									<i class="fa fa-star" aria-hidden="true"></i>
@@ -75,23 +74,37 @@
 								</a>
 							</li>
 						</ul>
-
-						<ul class="content--selection">
-							<li>
-							<button class="selection--first"><span>Size <i class="fa fa-angle-down" aria-hidden="true"></i></span></button>
-							</li>
-							<li>
-							<button class="selection--second"><span>Qty <i class="fa fa-angle-down" aria-hidden="true"></i></span></button>	
-							</li>
-							
-						</ul>
-
-						<button class="selection--third"><span>Add to card</span></button>
-					</div>
+						
+						<form>
+							<p>
+							<select class="selection_size">
+							<option>Size <i class="fa fa-angle-down" aria-hidden="true"></i></option>
+							<option value="38">38</option>
+							<option value="39">39</option>
+							<option value="40">40</option>
+							<option value="41">41</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							</select>	
+							</p>
+							<p>
+							<select class="selection_qty">
+							<option>Qty</option>
+							<option value="20">20</option>
+							<option value="22">22</option>
+							<option value="19">19</option>
+							<option value="23">23</option>
+							<option value="21">21</option>
+							<option value="20">20</option>	
+							</select>	
+							</p>
+							<p><input class="selection_add" type="submit" value="Add to card"></p>
+						</form>
+						
 				</div>
 			</div>
 			
-		</div>
+		
 		
 	</body>
 </html>
